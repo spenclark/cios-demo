@@ -1,4 +1,4 @@
-import { makeStyles } from "@mui/styles";
+import { makeStyles } from "@mui/material/styles";
 
 //Many styles on this view are inline to save time :)
 
