@@ -9,3 +9,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+::-moz-selection { /* Code for Firefox */
+  /* color: black; */
+  background: purple;
+}
+
+::selection {
+  /* color: black; */
+  background: purple;
+}
