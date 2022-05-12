@@ -3,17 +3,41 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+import { ThemeProvider } from "@mui/system";
+import { createTheme } from "@mui/material/styles";
 import { BrowserRouter } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      lightBackground: "#F6F9FC",
+      darkerBackground: "#edf0f2",
+      main: "#3f50b5",
+      dark: "#31313",
+      subTitleText: "#444444",
+    },
+  },
+  breakpoints: {
+    xs: 0,
+    sm: 600,
+    md: 1040,
+    lg: 1280,
+    xl: 1920,
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <CssBaseline> */}
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    {/* </CssBaseline> */}
+    <BrowserRouter>
+      <CssBaseline>
+        <ThemeProvider theme={theme}>
+          <App />
+        </ThemeProvider>
+      </CssBaseline>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
