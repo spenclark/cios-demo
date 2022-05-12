@@ -13,7 +13,21 @@ function Hero() {
         <h4>Tech Stack</h4>
         <div style={{margin: "6px 0 0", display: "flex"}}>
           {techData.map((e) => {
-            return <p style={{background: "black", fontSize: "12px", color: "white", fontWeight: "600", padding: "4px 9px", borderRadius: "12px", margin: "0 6px 6pxpx 0px"}}>{e}</p>;;
+            return (
+              <p
+                style={{
+                  background: "black",
+                  fontSize: "12px",
+                  color: "white",
+                  fontWeight: "600",
+                  padding: "4px 9px",
+                  borderRadius: "12px",
+                  margin: "0 6px 6px 0px",
+                }}
+              >
+                {e}
+              </p>
+            );
           })}
         </div>
       </div>
