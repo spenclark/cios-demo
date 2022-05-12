@@ -3,15 +3,16 @@ import React from "react";
 const techData = ["ReactJS", "Material-UI", "NodeJS", "Postgres", "Express"];
 function Hero() {
   return (
-    <div style={{margin: "0 0 40px"}}>
-      <h1 style={{fontSize: "38px"}}>Hello Cios,</h1>
-      <p style={{margin: "8px 0 16px", fontSize: "16px"}}>
+    <div style={{ margin: "0 0 40px" }}>
+      <h1 style={{ fontSize: "38px" }}>Hello Cios,</h1>
+      <p style={{ margin: "8px 0 16px", fontSize: "16px" }}>
         This is a prototype I made ahead of our meeting. These are just
-        representations of my ideas are not exaustive. Some are new ideas, others are improvments on existing flows. Enjoy :)
+        representations of my ideas are not exaustive. Some are new ideas,
+        others are improvments on existing flows. Enjoy :)
       </p>
       <div>
         <h4>Tech Stack</h4>
-        <div style={{margin: "6px 0 0", display: "flex"}}>
+        <div style={{ margin: "6px 0 0", display: "flex", flexWrap: "wrap" }}>
           {techData.map((e) => {
             return (
               <p
