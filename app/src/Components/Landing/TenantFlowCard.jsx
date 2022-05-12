@@ -1,5 +1,5 @@
 import React from "react";
-import ReactTinyLink from "react-tiny-link";
+import { ReactTinyLink } from "react-tiny-link";
 
 function TenantFlowCard() {
   return (

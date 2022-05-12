@@ -1,11 +1,12 @@
-import "./App.css";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import Landing from "./Components/Landing/Landing";
 
 function App() {
   return (
-    <div>
-      <Landing />
-    </div>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+    </Routes>
   );
 }
 

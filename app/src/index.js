@@ -9,11 +9,11 @@ import CssBaseline from "@mui/material/CssBaseline";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <CssBaseline>
+    {/* <CssBaseline> */}
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    </CssBaseline>
+    {/* </CssBaseline> */}
   </React.StrictMode>
 );
 
