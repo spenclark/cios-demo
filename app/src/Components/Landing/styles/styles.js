@@ -1,6 +1,7 @@
 import { makeStyles } from "@mui/styles";
 
-// No extra styles need --> wrote inline to save time
+//Many styles on this view are inline to save time :)
+
 export const landingStyles = makeStyles((theme) => ({
   root: {
     display: "flex",

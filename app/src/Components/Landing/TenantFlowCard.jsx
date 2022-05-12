@@ -3,7 +3,14 @@ import { ReactTinyLink } from "react-tiny-link";
 
 function TenantFlowCard() {
   return (
-    <div>
+    <div style={{ margin: "35px 0" }}>
+      <div style={{ margin: "18px 0" }}>
+        <h2 style={{ margin: "0 0 8px" }}>Building Distribution</h2>
+        <p>
+          Custom apartment listing intented to help landlords & managers save
+          time on admin work and find more/better tenants.
+        </p>
+      </div>
       <ReactTinyLink
         cardSize="small"
         showGraphic={true}
