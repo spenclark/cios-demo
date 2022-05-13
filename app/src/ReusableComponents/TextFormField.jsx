@@ -1,11 +1,12 @@
 import React from "react";
-import { Grid, MenuItem, TextField } from "@material-ui/core";
+import { Grid, MenuItem, TextField } from "@mui/material";
 
 export const TextFormField = (props) => {
   return (
     <Grid item xs={12} sm={props.sm}>
       <TextField
         fullWidth
+        style={{ margin: "10px 0" }}
         select={props.select}
         multiline={props.multiline}
         rows={props.rows}

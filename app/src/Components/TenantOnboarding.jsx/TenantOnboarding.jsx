@@ -17,6 +17,7 @@ import {
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import Radio from "@mui/material/Radio";
+import { TextFormField } from "../../ReusableComponents/TextFormField";
 
 const staticData = {
   header: {
@@ -37,11 +38,66 @@ const metaData = {
 const personalFormData = {
   title: "Personal Info",
   subTitle: "Fill out your personal information",
+  formValues: [
+    {
+      value: "firstName",
+      label: "First Name",
+      type: "text",
+      multiline: false,
+      sm: 6,
+      placeholder: "John",
+      data: [],
+    },
+    {
+      value: "lastName",
+      label: "Last Name",
+      multiline: false,
+      type: "text",
+      sm: 6,
+      placeholder: "Doe",
+      data: [],
+    },
+    {
+      value: "email",
+      label: "Email",
+      multiline: false,
+      type: "email",
+      sm: 12,
+      placeholder: "john@doe.com",
+      data: [],
+    },
+  ],
 };
 
 const bankingFormData = {
   title: "Banking Details",
   subTitle: "This will be saved for future payments",
+  formValues: [
+    {
+      value: "sortCode",
+      label: "Sort Code",
+      type: "text",
+      multiline: false,
+      placeholder: "007",
+      data: [],
+    },
+    {
+      value: "accountNumber",
+      label: "Account Number",
+      multiline: false,
+      type: "text",
+      placeholder: "12314",
+      data: [],
+    },
+    {
+      value: "postalCode",
+      label: "Postal Code",
+      multiline: false,
+      type: "text",
+      placeholder: "90210",
+      data: [],
+    },
+  ],
 };
 
 const ciosData = {
@@ -55,6 +111,9 @@ function TenantOnboarding() {
     document.description = `Your payment payment for ${metaData.address}`;
   }, []);
 
+  const handleChange = () => {
+    return null;
+  };
   return (
     <TenantDiv>
       <HeaderDiv>
@@ -64,58 +123,50 @@ function TenantOnboarding() {
       <FormDiv>
         <FormTitle>{personalFormData.title}</FormTitle>
         <FormSubtitle>{personalFormData.subTitle}</FormSubtitle>
-        <TextField
-          required
-          style={{ margin: "10px 0" }}
-          id="outlined-required"
-          label="First Name"
-          placeholder="John"
-        />
-        <TextField
-          required
-          style={{ margin: "10px 0" }}
-          id="outlined-required"
-          label="Last Name"
-          placeholder="Doe"
-        />
-        <TextField
-          required
-          style={{ margin: "10px 0" }}
-          id="outlined-required"
-          label="Email"
-          placeholder="johndoe@email.com"
-        />
+        {personalFormData.formValues.map((e) => {
+          return (
+            <TextFormField
+              sm={e.sm}
+              label={e.label}
+              type={e.type}
+              name={e.name}
+              select={e.select}
+              data={e.data}
+              value={e.value}
+              handleChanges={handleChange}
+            />
+          );
+        })}
       </FormDiv>
       <FormDiv>
         <FormTitle>{bankingFormData.title}</FormTitle>
         <FormSubtitle>{bankingFormData.subTitle}</FormSubtitle>
-        <TextField
-          required
-          style={{ margin: "10px 0" }}
-          id="outlined-required"
-          label="Sort Code"
-          placeholder="007"
-        />
-        <TextField
-          required
-          style={{ margin: "10px 0" }}
-          id="outlined-required"
-          label="Account Number"
-          placeholder="12314"
-        />
-        <TextField
-          required
-          style={{ margin: "10px 0" }}
-          id="outlined-required"
-          label="Postal Code"
-          placeholder="90210"
-        />
+        {bankingFormData.formValues.map((e) => {
+          return (
+            <TextFormField
+              sm={e.sm}
+              label={e.label}
+              type={e.type}
+              name={e.name}
+              select={e.select}
+              data={e.data}
+              value={e.value}
+              handleChanges={handleChange}
+            />
+          );
+        })}
       </FormDiv>
       <PaymentDiv>
         <FormTitle>{ciosData.title}</FormTitle>
         <FormSubtitle>{ciosData.subTitle}</FormSubtitle>
 
-        <div style={{ margin: "12px 0" }}>
+        <VanillaDiv
+          style={{
+            margin: "12px 0",
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
           Standard
           <VanillaDiv>
             <RadioDiv>
@@ -153,8 +204,8 @@ function TenantOnboarding() {
               </GridRow>
             </Grid>
           </VanillaDiv>
-        </div>
-        <div>
+        </VanillaDiv>
+        <CiosDiv style={{ flexDirection: "column", alignItems: "flex-start" }}>
           Cios Assistance
           <CiosDiv>
             <RadioDiv>
@@ -162,12 +213,11 @@ function TenantOnboarding() {
                 style={{ display: "flex", justifyContent: "flex-start" }}
               />
             </RadioDiv>
-
             <div style={{ fontWeight: "600" }}>
               Lorem Ipsum Finance $50/week
             </div>
           </CiosDiv>
-        </div>
+        </CiosDiv>
       </PaymentDiv>
       <Button
         variant="contained"

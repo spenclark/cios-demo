@@ -31,19 +31,19 @@ const formData = [
   },
   {
     title:
-      "How frequently do you receive rent or utility payments late?This question is required.",
+      "How frequently do you receive rent or utility payments late?",
     subTitle: "Take your best estimate across all your properties.",
     form: {},
   },
   {
     title:
-      "Which payment methods do you currently use for rent?This question is required.",
+      "Which payment methods do you currently use for rent?",
     subTitle: "Choose all that apply to you.",
     form: {},
   },
   {
     title:
-      "Rank the following goals based on your priorityThis question is required. *",
+      "Rank the following goals based on your priority.",
     subTitle: "Most important to least important",
     form: {},
   },
