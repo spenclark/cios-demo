@@ -1,12 +1,16 @@
 import React from 'react'
+import {
+  ContentCard,
+  TitleDiv,
+  ContentSubtitle,
+  ContentTitle,
+} from "./styles/styles";
 
 function AccessCard() {
     return (
-      <div style={{ margin: "35px 0" }}>
-        <div style={{ margin: "18px 0" }}>
-          <h2>
-            In-house onboarding flow {"  "}
-            <a
+          <ContentCard>
+      <TitleDiv>
+        <ContentTitle>In-house onboarding{"  "} <a
               style={{
                 color: "blue",
                 textDecoration: "none",
@@ -15,12 +19,15 @@ function AccessCard() {
               href="https://cios-demo.netlify.app/access"
             >
               /access
-            </a>
-          </h2>
-          <p>Cios deserves its own onboarding flow :)</p>
-        </div>
-        {/* Screenshot */}
-      </div>
+            </a></ContentTitle>
+        <ContentSubtitle>
+              Cios deserves its own onboarding flow. Backend code included.
+        </ContentSubtitle>
+      </TitleDiv>
+  
+    </ContentCard>
+    
+
     );
 }
 

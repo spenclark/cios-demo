@@ -2,16 +2,15 @@ import React from "react";
 import Hero from "./Hero";
 import AccessCard from "./AccessCard";
 import TenantFlowCard from "./TenantFlowCard";
-import { landingStyles } from "./styles/styles";
+import { LandingDiv } from "./styles/styles";
 
 function Landing() {
-  const classes = landingStyles();
   return (
-    <div className={classes.root}>
+    <LandingDiv>
       <Hero />
       <TenantFlowCard />
       <AccessCard />
-    </div>
+    </LandingDiv>
   );
 }
 

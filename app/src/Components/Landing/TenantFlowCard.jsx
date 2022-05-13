@@ -1,24 +1,24 @@
 import React from "react";
 import { ReactTinyLink } from "react-tiny-link";
+import { ContentCard, TitleDiv, ContentSubtitle, ContentTitle } from "./styles/styles";
 
 function TenantFlowCard() {
   return (
-    <div style={{ margin: "35px 0" }}>
-      <div style={{ margin: "18px 0" }}>
-        <h2 style={{ margin: "0 0 8px" }}>Building Distribution</h2>
-        <p>
-          Custom apartment listing intented to help landlords & managers save
-          time on admin work and find more/better tenants.
-        </p>
-      </div>
+    <ContentCard>
+      <TitleDiv>
+        <ContentTitle>Tenant Onboarding</ContentTitle>
+        <ContentSubtitle>
+          Sample tenant onboarding link. Dynamic Renderin. This UX flow is extremely important for both landlords and tenants. 
+        </ContentSubtitle>
+      </TitleDiv>
       <ReactTinyLink
         cardSize="small"
         showGraphic={true}
-        maxLine={2}
+        maxLine={1}
         minLine={1}
-        url="https://www.amazon.com/Steve-Madden-Mens-Jagwar-10-5/dp/B016X44MKA/ref=lp_18637582011_1_1?srs=18637582011&ie=UTF8&qid=1550721409&sr=8-1"
+        url="https://cios-demo.netlify.app"
       />
-    </div>
+    </ContentCard>
   );
 }
 
