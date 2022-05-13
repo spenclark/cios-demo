@@ -13,11 +13,11 @@ function Landing() {
   return (
     <LandingDiv>
       <Hero />
+      <EmbedCard />
       <TenantFlowCard />
       <ToolCard />
       <AccessCard />
       <OrgLandingCard />
-      {/* <EmbedCard /> */}
       <RepoCards />
     </LandingDiv>
   );
