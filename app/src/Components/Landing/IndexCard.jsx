@@ -10,9 +10,22 @@ function IndexCard() {
   return (
     <ContentCard>
       <TitleDiv>
-        <ContentTitle>Problem Index</ContentTitle>
+        <ContentTitle>
+          Landlord Tools{" "}
+          <a
+            style={{
+              color: "blue",
+              textDecoration: "none",
+              fontSize: "12px",
+            }}
+            target="_blank"
+            href="https://cios-demo.netlify.app/tools"
+          >
+            /tools
+          </a>
+        </ContentTitle>
         <ContentSubtitle>
-          Designed this a growth feature. Intent is to build a set of tools,
+          Designed as a growth feature. Intent is to build a set of tools,
           information and diagnoses.
         </ContentSubtitle>
       </TitleDiv>

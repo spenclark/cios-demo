@@ -12,10 +12,10 @@
 
 ::-moz-selection { /* Code for Firefox */
   /* color: black; */
-  background: pink;
+  background: blue;
 }
 
 ::selection {
   /* color: black; */
-  background: pink;
+  background: blue;
 }

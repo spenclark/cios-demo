@@ -19,8 +19,7 @@ export const LandingDiv = styled("div")(({ theme }) => ({
 }));
 
 export const ContentCard = styled("div")(({ theme }) => ({
-  margin: "15px 0",
-  padding: "20px 0",
+  padding: "20px",
 }));;
 
 export const TitleDiv = styled("div")(({ theme }) => ({

@@ -10,9 +10,23 @@ function OrgLandingCard() {
   return (
     <ContentCard>
       <TitleDiv>
-        <ContentTitle>Tenant Onboarding</ContentTitle>
+        <ContentTitle>
+          Landlord Association Page{" "}
+          <a
+            style={{
+              color: "blue",
+              textDecoration: "none",
+              fontSize: "12px",
+            }}
+            target="_blank"
+            href="https://cios-demo.netlify.app/association"
+          >
+            /association
+          </a>
+        </ContentTitle>
         <ContentSubtitle>
-          Marketing Page for 
+          Marketing Page for Landlord associations. If this is a primary
+          distribution channel it deserves its own channel.
         </ContentSubtitle>
       </TitleDiv>
     </ContentCard>

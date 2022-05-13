@@ -11,20 +11,21 @@ function AccessCard() {
       <ContentCard>
         <TitleDiv>
           <ContentTitle>
-            In-house onboarding{"  "}{" "}
+              Early Access Form{"  "}{" "}
             <a
               style={{
                 color: "blue",
                 textDecoration: "none",
                 fontSize: "12px",
               }}
+              target="_blank"
               href="https://cios-demo.netlify.app/access"
             >
               /access
             </a>
           </ContentTitle>
           <ContentSubtitle>
-            Cios deserves its own onboarding flow. 
+            Cios deserves its own onboarding flow. No more typeform.
           </ContentSubtitle>
         </TitleDiv>
       </ContentCard>

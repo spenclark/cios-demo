@@ -8,7 +8,8 @@ function TenantFlowCard() {
       <TitleDiv>
         <ContentTitle>Tenant Onboarding</ContentTitle>
         <ContentSubtitle>
-          Sample tenant onboarding link. Dynamic Renderin. This UX flow is extremely important for both landlords and tenants. 
+          Sample tenant onboarding link. Dynamic Renderin. This UX flow is
+          extremely important for both landlords and tenants.
         </ContentSubtitle>
       </TitleDiv>
       <ReactTinyLink
