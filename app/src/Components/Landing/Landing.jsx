@@ -4,6 +4,9 @@ import AccessCard from "./AccessCard";
 import TenantFlowCard from "./TenantFlowCard";
 import IndexCard from "./IndexCard";
 import { LandingDiv } from "./styles/styles";
+import OrgLandingCard from "./OrgLandingCard";
+import RepoCards from "./RepoCards";
+
 
 function Landing() {
   return (
@@ -12,6 +15,8 @@ function Landing() {
       <TenantFlowCard />
       <IndexCard />
       <AccessCard />
+      <OrgLandingCard />
+      <RepoCards />
     </LandingDiv>
   );
 }
