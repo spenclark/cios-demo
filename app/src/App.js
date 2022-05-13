@@ -7,7 +7,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
-      <Route path="/n/1" element={<TenantOnboarding />} />
+      <Route path="/n/401-21-Seasme-St" element={<TenantOnboarding />} />
     </Routes>
   );
 }

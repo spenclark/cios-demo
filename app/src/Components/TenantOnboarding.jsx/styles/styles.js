@@ -1,4 +1,4 @@
-import { styled } from "@mui/system";
+import { padding, styled } from "@mui/system";
 
 export const TenantDiv = styled("div")(({ theme }) => ({
   display: "flex",
@@ -45,17 +45,31 @@ export const FormSubtitle = styled("p")(({ theme }) => ({
 
 export const FormDiv = styled("div")(({ theme }) => ({
   display: "flex",
-  margin: "40px 0",
+  margin: "20px 0 40px",
   flexDirection: "column",
 }));
 
-export const CiosTitle = styled("h2")(({ theme }) => ({}));
+export const CiosTitle = styled("h4")(({ theme }) => ({}));
 
 export const CiosSubtitle = styled("p")(({ theme }) => ({}));
 
 export const CiosDiv = styled("div")(({ theme }) => ({
   display: "flex",
-  margin: "40px 0",
+  background: "#efefef",
+  borderRadius: "7px",
+  padding: "18px",
+  width: "100%",
+  margin: "20px 0 40px",
+  flexDirection: "column",
+  margin: "auto",
+}));
+
+export const CiosButton = styled("button")(({ theme }) => ({
+  display: "flex",
+  background: "#efefef",
+  borderRadius: "7px",
+  padding: "18px",
+  margin: "20px 0 40px",
   flexDirection: "column",
   margin: "auto",
 }));
