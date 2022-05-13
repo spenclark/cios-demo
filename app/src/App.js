@@ -15,7 +15,7 @@ function App() {
       <Route path="/tools" element={<Tools />} />
       <Route path="/tools/laterentemail" element={<CreateLatePaymentEmail />} />
       <Route path="/access" element={<Access />} />
-      <Route path="/assocations" element={<Association />} />
+      <Route path="/associations" element={<Association />} />
     </Routes>
   );
 }

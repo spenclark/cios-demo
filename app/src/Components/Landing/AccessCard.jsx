@@ -11,7 +11,7 @@ function AccessCard() {
       <ContentCard>
         <TitleDiv>
           <ContentTitle>
-              Early Access Form{"  "}{" "}
+            Early Access Form{"  "}{" "}
             <a
               style={{
                 color: "blue",
@@ -19,7 +19,7 @@ function AccessCard() {
                 fontSize: "12px",
               }}
               target="_blank"
-              href="https://cios-demo.netlify.app/access"
+              href="/access"
             >
               /access
             </a>

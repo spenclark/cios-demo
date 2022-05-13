@@ -19,7 +19,7 @@ function OrgLandingCard() {
               fontSize: "12px",
             }}
             target="_blank"
-            href="https://cios-demo.netlify.app/association"
+            href="/associations"
           >
             /association
           </a>

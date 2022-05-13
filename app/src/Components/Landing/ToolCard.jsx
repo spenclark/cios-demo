@@ -19,7 +19,7 @@ function IndexCard() {
               fontSize: "12px",
             }}
             target="_blank"
-            href="https://cios-demo.netlify.app/tools"
+            href="/tools"
           >
             /tools
           </a>
