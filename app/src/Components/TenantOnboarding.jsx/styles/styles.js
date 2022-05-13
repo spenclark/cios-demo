@@ -51,7 +51,9 @@ export const FormDiv = styled("div")(({ theme }) => ({
 
 export const CiosTitle = styled("h4")(({ theme }) => ({}));
 
-export const CiosSubtitle = styled("p")(({ theme }) => ({}));
+export const CiosSubtitle = styled("p")(({ theme }) => ({
+  margin: "6px 0 18px",
+}));
 
 export const CiosDiv = styled("div")(({ theme }) => ({
   display: "flex",
@@ -59,17 +61,43 @@ export const CiosDiv = styled("div")(({ theme }) => ({
   borderRadius: "7px",
   padding: "18px",
   width: "100%",
-  margin: "20px 0 40px",
-  flexDirection: "column",
-  margin: "auto",
+  alignItems: "center",
+  marginTop: "3px",
 }));
 
-export const CiosButton = styled("button")(({ theme }) => ({
+export const VanillaDiv = styled("div")(({ theme }) => ({
   display: "flex",
-  background: "#efefef",
+  justifyContent: "space-between",
   borderRadius: "7px",
   padding: "18px",
-  margin: "20px 0 40px",
-  flexDirection: "column",
-  margin: "auto",
+  width: "100%",
+  alignItems: "center",
 }));
+
+export const Grid = styled("div")(({ theme }) => ({
+  width: "100%",
+}));
+
+export const GridRow = styled("div")(({ theme }) => ({
+  display: "flex",
+  justifyContent: "row",
+  width: "100%",
+  padding: "2px 0",
+  borderBottom: "1px black solid",
+}));
+
+export const PaymentDiv = styled("div")(({ theme }) => ({
+  display: "flex",
+  margin: "20px 0 10px",
+  flexDirection: "column",
+}));
+
+export const RadioDiv = styled("div")(({ theme }) => ({
+  width: "12px",
+  height: "12px",
+  marginRight: "20px",
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}));
+

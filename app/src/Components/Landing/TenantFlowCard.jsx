@@ -17,7 +17,7 @@ function TenantFlowCard() {
         showGraphic={true}
         maxLine={1}
         minLine={1}
-        url="https://cios-demo.netlify.app/n/1"
+        url="https://cios-demo.netlify.app/n/401-21-Seasme-St"
       />
     </ContentCard>
   );
