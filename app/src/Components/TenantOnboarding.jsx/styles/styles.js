@@ -1,4 +1,4 @@
-import { padding, styled } from "@mui/system";
+import { styled } from "@mui/system";
 
 export const TenantDiv = styled("div")(({ theme }) => ({
   display: "flex",
@@ -100,4 +100,3 @@ export const RadioDiv = styled("div")(({ theme }) => ({
   justifyContent: "center",
   alignItems: "center",
 }));
-
