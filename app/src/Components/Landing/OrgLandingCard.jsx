@@ -21,7 +21,7 @@ function OrgLandingCard() {
             target="_blank"
             href="/associations"
           >
-            /association
+            /associations
           </a>
         </ContentTitle>
         <ContentSubtitle>
