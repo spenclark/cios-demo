@@ -21,8 +21,6 @@ const formData = [
   {
     title: "How many rental units do you own or manage?",
     subTitle:
-     
-     
       "Each rental unit would have its own lease agreement with tenant(s).",
     form: {},
   },
@@ -32,18 +30,21 @@ const formData = [
     form: {},
   },
   {
-    title: "",
-    subTitle: "",
+    title:
+      "How frequently do you receive rent or utility payments late?This question is required.",
+    subTitle: "Take your best estimate across all your properties.",
     form: {},
   },
   {
-    title: "",
-    subTitle: "",
+    title:
+      "Which payment methods do you currently use for rent?This question is required.",
+    subTitle: "Choose all that apply to you.",
     form: {},
   },
   {
-    title: "",
-    subTitle: "",
+    title:
+      "Rank the following goals based on your priorityThis question is required. *",
+    subTitle: "Most important to least important",
     form: {},
   },
 ];
