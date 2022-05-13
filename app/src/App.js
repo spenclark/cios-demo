@@ -4,6 +4,7 @@ import Access from "./Components/EarlyAccess/Access";
 import Landing from "./Components/Landing/Landing";
 import TenantOnboarding from "./Components/TenantOnboarding.jsx/TenantOnboarding";
 import Tools from "./Components/Tools/Tools";
+import Association from "./Components/Association/Association";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Route path="/n/401-21-Seasme-St" element={<TenantOnboarding />} />
       <Route path="/tools" element={<Tools />} />
       <Route path="/access" element={<Access />} />
-      <Route path="/access" element={<Access />} />
+      <Route path="/assocations" element={<Association />} />
     </Routes>
   );
 }

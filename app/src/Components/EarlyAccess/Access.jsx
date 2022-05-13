@@ -4,7 +4,7 @@ import {
   HeaderSubtitle,
   HeaderTitle,
   ParentDiv,
-} from "../TenantOnboarding.jsx/styles/styles";
+} from "./styles/styles";
 
 const formData = [
   {
