@@ -66,21 +66,21 @@ function TenantOnboarding() {
         <FormSubtitle>{personalFormData.subTitle}</FormSubtitle>
         <TextField
           required
-          style={{       margin: "10px 0"       }}
+          style={{ margin: "10px 0" }}
           id="outlined-required"
           label="First Name"
           placeholder="John"
         />
         <TextField
           required
-          style={{       margin: "10px 0"       }}
+          style={{ margin: "10px 0" }}
           id="outlined-required"
           label="Last Name"
           placeholder="Doe"
         />
         <TextField
           required
-          style={{       margin: "10px 0"       }}
+          style={{ margin: "10px 0" }}
           id="outlined-required"
           label="Email"
           placeholder="johndoe@email.com"
@@ -91,21 +91,21 @@ function TenantOnboarding() {
         <FormSubtitle>{bankingFormData.subTitle}</FormSubtitle>
         <TextField
           required
-          style={{       margin: "10px 0"       }}
+          style={{ margin: "10px 0" }}
           id="outlined-required"
           label="Sort Code"
           placeholder="007"
         />
         <TextField
           required
-          style={{       margin: "10px 0"       }}
+          style={{ margin: "10px 0" }}
           id="outlined-required"
           label="Account Number"
           placeholder="12314"
         />
         <TextField
           required
-          style={{       margin: "10px 0"       }}
+          style={{ margin: "10px 0" }}
           id="outlined-required"
           label="Postal Code"
           placeholder="90210"
@@ -171,7 +171,7 @@ function TenantOnboarding() {
       </PaymentDiv>
       <Button
         variant="contained"
-        style={{ margin: "30px 0", fontWeight: "600" }}
+        style={{ margin: "30px 0", padding: "10px 0", fontWeight: "600" }}
       >
         Review Payment
       </Button>
