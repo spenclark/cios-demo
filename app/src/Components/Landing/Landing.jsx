@@ -17,7 +17,7 @@ function Landing() {
       <ToolCard />
       <AccessCard />
       <OrgLandingCard />
-      <EmbedCard />
+      {/* <EmbedCard /> */}
       <RepoCards />
     </LandingDiv>
   );

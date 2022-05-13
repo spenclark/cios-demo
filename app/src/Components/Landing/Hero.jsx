@@ -8,8 +8,7 @@ function Hero() {
     >
       <h1 style={{ fontSize: "38px" }}>Hello Cios,</h1>
       <p style={{ margin: "8px 0 16px", fontSize: "18px" }}>These are just
-        representations of my ideas are not exaustive. All of it is 100%
-        functional and with work can be moved to production. Enjoy :)
+        representations of my ideas are not exaustive. With work can be moved to production. Enjoy :)
       </p>
       <div>
         <h3>Tech Stack</h3>

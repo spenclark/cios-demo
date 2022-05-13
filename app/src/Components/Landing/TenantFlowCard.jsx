@@ -8,8 +8,8 @@ function TenantFlowCard() {
       <TitleDiv>
         <ContentTitle>Tenant Onboarding</ContentTitle>
         <ContentSubtitle>
-          Tenant onboarding link from landlord. Dynamic rendering. Collect
-          tenant information and upsells lending products.
+          Tenant onboarding link from landlord. Collect tenant information and
+          upsells lending products.
         </ContentSubtitle>
       </TitleDiv>
       <ReactTinyLink
@@ -17,7 +17,7 @@ function TenantFlowCard() {
         showGraphic={true}
         maxLine={1}
         minLine={1}
-        url="https://cios-demo.netlify.app"
+        url="https://cios-demo.netlify.app/n/1"
       />
     </ContentCard>
   );
