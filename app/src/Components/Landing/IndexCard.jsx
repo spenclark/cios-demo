@@ -11,7 +11,10 @@ function IndexCard() {
     <ContentCard>
       <TitleDiv>
         <ContentTitle>Problem Index</ContentTitle>
-        <ContentSubtitle>Growth Feature</ContentSubtitle>
+        <ContentSubtitle>
+          Designed this a growth feature. Intent is to build a set of tools,
+          information and diagnoses.
+        </ContentSubtitle>
       </TitleDiv>
     </ContentCard>
   );

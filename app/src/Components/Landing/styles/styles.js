@@ -5,7 +5,7 @@ import { styled } from "@mui/system";
 export const LandingDiv = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
-  width: "600px",
+  width: "620px",
   maxWidth: "80%",
   padding: "50px",
   marginTop: "10px",
@@ -19,7 +19,8 @@ export const LandingDiv = styled("div")(({ theme }) => ({
 }));
 
 export const ContentCard = styled("div")(({ theme }) => ({
-  margin: "20px 0",
+  margin: "15px 0",
+  padding: "20px 0",
 }));;
 
 export const TitleDiv = styled("div")(({ theme }) => ({

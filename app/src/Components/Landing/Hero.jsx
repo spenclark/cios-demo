@@ -3,14 +3,16 @@ import React from "react";
 const techData = ["ReactJS", "Material-UI", "NodeJS", "Postgres", "Express"];
 function Hero() {
   return (
-    <div style={{ margin: "20px 0 0px" }}>
+    <div style={{ margin: "20px 0 0px", padding: "20px", borderRadius: "7px", background: "#efefef" }}>
       <h1 style={{ fontSize: "38px" }}>Hello Cios,</h1>
-      <p style={{ margin: "8px 0 16px", fontSize: "16px" }}>
+      <p style={{ margin: "8px 0 16px", fontSize: "18px" }}>
         This is a set of prototypes I made after our meeting. These are just
-        representations of my ideas are not exaustive. Enjoy :)
+        representations of my ideas are not exaustive. All of it is 100%
+       
+        functional. Enjoy :)
       </p>
       <div>
-        <h4>Tech Stack</h4>
+        <h3>Tech Stack</h3>
         <div style={{ margin: "6px 0 0", display: "flex", flexWrap: "wrap" }}>
           {techData.map((e, i) => {
             return (

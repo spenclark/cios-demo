@@ -8,9 +8,11 @@ import {
 
 function AccessCard() {
     return (
-          <ContentCard>
-      <TitleDiv>
-        <ContentTitle>In-house onboarding{"  "} <a
+      <ContentCard>
+        <TitleDiv>
+          <ContentTitle>
+            In-house onboarding{"  "}{" "}
+            <a
               style={{
                 color: "blue",
                 textDecoration: "none",
@@ -19,15 +21,13 @@ function AccessCard() {
               href="https://cios-demo.netlify.app/access"
             >
               /access
-            </a></ContentTitle>
-        <ContentSubtitle>
-              Cios deserves its own onboarding flow. Backend code included.
-        </ContentSubtitle>
-      </TitleDiv>
-  
-    </ContentCard>
-    
-
+            </a>
+          </ContentTitle>
+          <ContentSubtitle>
+            Cios deserves its own onboarding flow. 
+          </ContentSubtitle>
+        </TitleDiv>
+      </ContentCard>
     );
 }
 
