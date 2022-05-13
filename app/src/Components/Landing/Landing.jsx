@@ -2,10 +2,11 @@ import React from "react";
 import Hero from "./Hero";
 import AccessCard from "./AccessCard";
 import TenantFlowCard from "./TenantFlowCard";
-import IndexCard from "./IndexCard";
+import ToolCard from "./ToolCard";
 import { LandingDiv } from "./styles/styles";
 import OrgLandingCard from "./OrgLandingCard";
 import RepoCards from "./RepoCards";
+import EmbedCard from "./EmbedCard";
 
 
 function Landing() {
@@ -13,9 +14,10 @@ function Landing() {
     <LandingDiv>
       <Hero />
       <TenantFlowCard />
-      <IndexCard />
+      <ToolCard />
       <AccessCard />
       <OrgLandingCard />
+      <EmbedCard />
       <RepoCards />
     </LandingDiv>
   );

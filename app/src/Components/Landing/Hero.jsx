@@ -7,10 +7,9 @@ function Hero() {
       style={{ padding: "20px", borderRadius: "7px", background: "#efefef" }}
     >
       <h1 style={{ fontSize: "38px" }}>Hello Cios,</h1>
-      <p style={{ margin: "8px 0 16px", fontSize: "18px" }}>
-        This is a set of prototypes I made after our meeting. These are just
+      <p style={{ margin: "8px 0 16px", fontSize: "18px" }}>These are just
         representations of my ideas are not exaustive. All of it is 100%
-        functional. Enjoy :)
+        functional and with work can be moved to production. Enjoy :)
       </p>
       <div>
         <h3>Tech Stack</h3>
