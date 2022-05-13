@@ -1,4 +1,4 @@
-import TextFormField from "./TextFormField";
+import { TextFormField } from "./TextFormField";
 import React, { useState } from "react";
 import { Button } from "@mui/material";
 

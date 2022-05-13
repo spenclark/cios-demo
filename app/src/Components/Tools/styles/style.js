@@ -51,7 +51,7 @@ export const ToolContainer = styled("div")(({ theme }) => ({
 export const ParentDiv = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
-  width: "620px",
+  width: "800px",
   maxWidth: "80%",
   margin: "auto",
   padding: "50px",
@@ -66,11 +66,13 @@ export const ParentDiv = styled("div")(({ theme }) => ({
 
 export const ToolTitle = styled("h1")(({ theme }) => ({
   fontSize: "42px",
+  textAlign: "center",
 }));
 
 export const ToolSubtitle = styled("p")(({ theme }) => ({
   margin: "10px",
   fontSize: "18px",
+  textAlign: "center",
 }));
 
 export const FooterDiv = styled("div")(({ theme }) => ({
