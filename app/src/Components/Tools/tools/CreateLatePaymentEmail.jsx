@@ -1,18 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FooterDiv, ToolTitle, ParentDiv, ToolSubtitle } from "../styles/style";
 
 function CreateLatePaymentEmail() {
   const [data, setData] = useState({
     name: "",
-    address: "",  
-  })
+    address: "",
+    email:
+     ``,
+  });
+
+  useEffect(() => {
+    setData({...data, email: `Hey ${data.name}, I noticed you were behind on rent this month at ${data.address}. I was wondering if I could be of any assistance. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu erat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel quam sed risus euismod euismod sed nec ex. Nunc id commodo eros. Mauris vulputate tortor felis, non iaculis lacus pharetra eu. Fusce aliquet vel ex non congue. Etiam porta nibh ac elementum sollicitudin. Nullam dictum accumsan hendrerit. Nam felis ligula, consectetur vitae leo nec, tempus iaculis lorem. In vel tempor nibh. Mauris ac rhoncus turpis.`})
+    
+  }, [data.name, data.address])
+const container = document.getElementById("base");
 
   const [isEditing, setEditingState] = useState(false)
 
   function copyToClipboard() {
-        
-          const e = `Hey ${data.name}, I noticed you were behind on rent this month at ${data.address}. I was wondering if I could be of any assistance. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu erat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel quam sed risus euismod euismod sed nec ex. Nunc id commodo eros. Mauris vulputate tortor felis, non iaculis lacus pharetra eu. Fusce aliquet vel ex non congue. Etiam porta nibh ac elementum sollicitudin. Nullam dictum accumsan hendrerit. Nam felis ligula, consectetur vitae leo nec, tempus iaculis lorem. In vel tempor nibh. Mauris ac rhoncus turpis.`;
-         
+        const e = data.email
         var isIE = /*@cc_on!@*/ false || !!document.documentMode; // checks to see if is internet exporeper
         if (isIE) {
           window.clipboardData.setData("Text", `${e}`);
@@ -55,13 +61,26 @@ function CreateLatePaymentEmail() {
 
       {!isEditing ? (
         <div style={{ height: "200px", padding: "30px 0" }}>
-          <div>
-            {`Hey ${data.name},`}
-            {`I noticed you were behind on rent this month at ${data.address}. I was wondering if I could be of any assistance. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu erat sem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel quam sed risus euismod euismod sed nec ex. Nunc id commodo eros. Mauris vulputate tortor felis, non iaculis lacus pharetra eu. Fusce aliquet vel ex non congue. Etiam porta nibh ac elementum sollicitudin. Nullam dictum accumsan hendrerit. Nam felis ligula, consectetur vitae leo nec, tempus iaculis lorem. In vel tempor nibh. Mauris ac rhoncus turpis.`}
+          <div id="base">
+            {data.email}
           </div>
         </div>
       ) : (
-        <div style={{ height: "200px", padding: "30px 0" }}>Editing</div>
+        <div style={{ height: "200px", padding: "30px 0" }}>
+          <textarea
+        
+               name="editForm"
+            style={{fontSize: "16px"}}
+            value={data.email}
+            onChange={(e) => {setData({ ...data, email: e.target.value })}}
+             id="editForm"
+       
+                rows="8"
+    
+                   cols="80"
+         
+          />
+        </div>
       )}
       <div style={{ display: "flex" }}>
         <button
